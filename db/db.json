@@ -4,18 +4,13 @@
         "text": "Test text"
     },
     {
-        "title": "Do homework",
-        "text": "Finish by Sunday",
-        "note_id": "feaa"
-    },
-    {
         "title": "Saturday",
-        "text": "Visit Esther\n",
-        "note_id": "8615"
+        "text": "See Esther",
+        "note_id": "753b"
     },
     {
         "title": "Sunday",
-        "text": "Hello",
-        "note_id": "0ece"
+        "text": "Finish homework",
+        "note_id": "a257"
     }
 ]
