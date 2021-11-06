@@ -9,7 +9,6 @@ const uuid = require("../helpers/uuid");
 // GET Route for retrieving all the notes
 notes.get("/", (req, res) => {
   console.info(`${req.method} request received for notes`);
-
   readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
@@ -23,7 +22,7 @@ notes.post("/", (req, res) => {
 
   // If all the required properties are present
   if (title && text) {
-    // Variable for the object we will save
+    // Variable for the object will be saved
     const newNote = {
       title,
       text,
@@ -43,13 +42,26 @@ notes.post("/", (req, res) => {
   }
 });
 
-// DELETE Route for a specific note
-notes.delete("/:note_id", (req, res) => {
-  const noteId = req.params.note_id;
+// GET Route for a specific note
+notes.get("/:tip_id", (req, res) => {
+  let noteId = req.params.note_id;
   readFromFile("./db/db.json")
     .then((data) => JSON.parse(data))
     .then((json) => {
-      // Make a new array of all tips except the one with the ID provided in the URL
+      const result = json.filter((note) => note.note_id === noteId);
+      return result.length > 0
+        ? res.json(result)
+        : res.json("No note with that ID");
+    });
+});
+
+// DELETE Route for a specific note
+notes.delete("/:note_id", (req, res) => {
+  let noteId = req.params.note_id;
+  readFromFile("./db/db.json")
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      // Make a new array of notes except the one with the ID provided in the URL
       const result = json.filter((note) => note.note_id !== noteId);
 
       // Save that array to the filesystem
