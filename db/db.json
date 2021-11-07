@@ -1,31 +1,26 @@
 [
     {
-        "title": "Note Title",
-        "text": "Note Details"
+        "title": "9am Call Bank",
+        "text": "Check payments"
     },
     {
-        "title": "9am Doctor Appointment",
-        "text": "Bring test results",
+        "title": "Meeting with staff",
+        "text": "Discuss shift changes",
         "note_id": "7709"
     },
     {
-        "title": "Grocery Shop",
-        "text": "Milk, Bread, Apples, Butter",
+        "title": "Finalise Roster",
+        "text": "Check if Jenna can work Fridays",
         "note_id": "1677"
     },
     {
-        "title": "Finalise Homework",
-        "text": "Proofread and submit",
+        "title": "Tuesday Finish Payroll",
+        "text": "Ring accountant",
         "note_id": "535a"
     },
     {
-        "title": "Friday Pick Up Dry Cleaning",
-        "text": "Bring receipt",
+        "title": "Organise monthly clean",
+        "text": "Check availability of new company",
         "note_id": "4d74"
-    },
-    {
-        "title": "Get Present for Jason",
-        "text": "Glue clothing voucher",
-        "note_id": "6ed8"
     }
 ]
