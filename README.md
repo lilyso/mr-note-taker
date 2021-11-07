@@ -16,6 +16,8 @@
 
 ## General Information
 
+A simple note taker to keep track of your appointments, daily/weekly tasks and notes.
+
 ## Technologies Used
 
 - HTML5
@@ -28,9 +30,13 @@
 
 ## Features
 
+- Save notes to keep track of appointments and daily/weekly tasks.
+- Delete tasks when they have been completed.
+
 ## Screenshots
 
-![Desktop Screenshot](example.png)
+![Desktop Screenshot](public/assets/images/mrnotetaker_screenshot.png)
+![Desktop Screenshot](public/assets/images/mrnotetaker_screenshot2.png)
 
 ## Setup
 
